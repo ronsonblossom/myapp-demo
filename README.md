@@ -1,5 +1,5 @@
 # myapp-demo
-Kubernetes Python Apache Docker Shellscript
+Kubernetes | Python | Apache | Docker | Shellscript
 
 The setup.sh script will install below packages. 
 # VirtualBox

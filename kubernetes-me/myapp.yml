@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp.example.com
+  labels:
+    app: myapp
+spec:
+  containers:
+  - name: myapp
+    image: ronsonblossom/myapp:6.0
+    ports:
+    - name: myapp-port
+      containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapp-service
+spec:
+  ports:
+  - port: 31003
+    nodePort: 31003
+    targetPort: myapp-port
+    protocol: TCP
+  selector:
+    app: myapp
+  type: NodePort

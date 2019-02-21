@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+import requests
+import json
+
+url = "http://localhost/app1"
+headers = {'cache-control': "no-cache"}
+response = requests.request("GET", url, headers=headers)
+reverseText = json.loads(response.text)['messages'][::-1]
+print ""
+print reverseText

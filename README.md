@@ -13,5 +13,5 @@ After installing packages, script will clone this repo and create a pod and serv
 # App2 
 - python script, location /var/www/cgi-bin/app2. This script will utilize App1 and displays reversed message text.
 
-All these activiies are automated into a single script file setup.sh. Just run this script on Ubuntu.
+All these activiies are automated into a single script file setup.sh. Run the script on Ubuntu.
 # sh setup.sh

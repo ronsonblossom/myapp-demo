@@ -34,11 +34,8 @@ Sleep 30
 ##DOCKER INSTALLATION IF REQUIRED ONLY
 #apt-get install -y docker.io
 
-##CLONE CODES FROM GITHUB NOTE: DOCKER FILES ARE ALSO UPLOADED TO THIS GIT REPO
-git clone https://github.com/ronsonblossom/myapp-demo.git
-
 ##CREATE POD AND SERVICE IN K8S
-kubectl create -f myapp-demo/kubernetes-me/myapp.yml
+kubectl create -f kubernetes-me/myapp.yml
 
 ##WAITING FOR PODS
 while :

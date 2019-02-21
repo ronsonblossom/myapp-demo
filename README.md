@@ -6,7 +6,7 @@ The setup.sh script will install below packages.
 # Kubectl
 # MiniKube
 
-After installing packages, script will clone this repo and create a pod and service in Kubernetes. Pod contains two simple applications.
+After installing packages, script will create a pod and service in Kubernetes. Pod contains two simple applications.Service creates a NodePort to access to application.
 
 # App1 
 - json file containing "Hello World" message, location /var/www/html/app1

@@ -29,7 +29,7 @@ chmod +x minikube && sudo mv minikube /usr/local/bin/
 minikube start
 
 ##WAITING FOR MINIKUBE TO COMEUP
-Sleep 30
+sleep 30
 
 ##DOCKER INSTALLATION IF REQUIRED ONLY
 #apt-get install -y docker.io
